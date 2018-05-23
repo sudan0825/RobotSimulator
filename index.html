@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta  name="autor" content="Dan Su">
+    </head>
+    <body>
+        <div id="TopInput" >
+            <label>X Value : </label>
+            <select id="x">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label>Y Value : </label>
+            <select id="y">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label>Direction : </label>
+            <select id="f">
+                <option value="north">North</option>
+                <option value="south">South</option>
+                <option value="west">West</option>
+                <option value="east">East</option>
+            </select>
+          
+            <button  onclick="initialPosition()">Initial</button>
+            <button onclick="autoMoving()" >Start</button>
+            <button onclick="stop()">Stop</button>
+
+        </div>
+        <div id="container">
+            <div id="Kcage">
+
+                <div id="king"></div>
+
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div id="25"></div>
+
+            </div>
+           
+        </div>
+         <div id="reportBox"></div>
+        <div id="BottomInput">
+            <input type="button" value="Move" onclick="move()">
+
+            <input type="button" value="Left" onclick="turnLeft()">
+
+            <input type="button" value="Right" onClick="turnRight()">
+
+            <input type="button" value="Report" onClick="report()">
+        </div>
+        <script src="control.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </body>
+</html>
